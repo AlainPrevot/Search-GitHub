@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { IconLupa } from "../Icons";
 import StyleSearchUser from "./sass/SearchUser.module.sass";
 
 export const SearchUser = ({onNewUser}) => {
@@ -20,6 +21,9 @@ export const SearchUser = ({onNewUser}) => {
 
   return (
     <form className={StyleSearchUser.form} onSubmit={onSubmit}> {/* La funcion OnSubmit hace que no se recargue la pagina cada vez que buscamos un valor */}
+
+        <IconLupa className={StyleSearchUser.form__lupa}/>
+
         <input 
             className={StyleSearchUser.input}
             type="text" 
@@ -27,6 +31,7 @@ export const SearchUser = ({onNewUser}) => {
             value={inputValue}
             onChange={onInputChange}
         />
+        
         <button className={StyleSearchUser.button} onSubmit={onSubmit}>Search</button>
     </form>
   )

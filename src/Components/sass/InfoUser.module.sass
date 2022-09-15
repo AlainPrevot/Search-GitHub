@@ -1,11 +1,31 @@
+@use './_Font'    
+    
 .content
-    border: 1px solid red
+    padding: 20px 0
+    position: relative
 
     h1
         color: white
+        font-size: 28px
+        margin-bottom: 4px
+
+    p, h2
+        font:
+            size: 14px
+            weight: 400
     
     h2
         color:#194684
+        margin-bottom: 26px
 
+    h2::before
+        content: '@'
+        
     p
         color: #5D6782
+
+    p:last-child
+        position: absolute
+        right: 0px
+        top: 26px
+    

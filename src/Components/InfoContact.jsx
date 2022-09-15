@@ -1,3 +1,5 @@
+import {IconCompany, IconLocation, IconTwitter, IconURL} from '../Icons'
+import StyleInfoContact from './sass/InfoContact.module.sass'
 
 export const InfoContact = ({location, twitter, url, company}) => {
 
@@ -7,10 +9,18 @@ export const InfoContact = ({location, twitter, url, company}) => {
     let user_company = company == null ? 'Not Available' : company
 
   return (
-    <div>
+    <div className={StyleInfoContact.content}>
+
+        <IconLocation className={StyleInfoContact.content__Icon}/>
         <span>{user_location}</span>
+
+        <IconTwitter className={StyleInfoContact.content__Icon}/>
         <span>{user_twitter}</span>
-        <span>{user_url}</span>
+
+        <IconURL className={StyleInfoContact.content__Icon}/>
+        <a href={user_url}>{user_url}</a>
+
+        <IconCompany className={StyleInfoContact.content__Icon}/>
         <span>{user_company}</span>
     </div>
   )

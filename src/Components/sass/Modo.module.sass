@@ -1,0 +1,54 @@
+@use './_Font'
+    
+.content
+    // border: 1px solid red
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    h1, label
+        color: white
+
+    h1
+        font-size: 24px
+        font-weight: 400
+
+    .modo
+        display: flex
+        flex-direction: row-reverse
+        position: relative
+
+        label
+            font-size: 12px
+            padding: 20px
+            
+        .dark
+            display: none
+            color: #4B6A9B
+
+        .dark:after
+            content: ''
+            position: absolute
+            width: 16px
+            height: 16px
+            background-image: url('../../Icons/IconLuna.svg')
+            background-size: cover
+            margin: -1px 0 0 10px
+        .ligth:after
+            content: ''
+            position: absolute
+            width: 16px
+            height: 16px
+            background-image: url('../../Icons/IconSol.svg')
+            background-size: cover
+            margin: -1px 0 0 10px
+            
+            
+        input:checked ~ .ligth
+            display: none
+
+        input:checked ~ .dark
+            display: initial
+
+        input
+            visibility: hidden

@@ -1,39 +1,45 @@
-import { Avatar } from "./Avatar";
 import { useFetchGitHub } from "./hooks/useFetchGitHub"
-import { InfoContact } from "./InfoContact";
-import { InfoRepos } from "./InfoRepos";
-import { InfoUser } from "./InfoUser";
+import {Avatar, InfoContact, InfoRepos, InfoUser } from "../Components";
 
-import './sass/CardUser.sass'
+import StyleCardUser from './sass/CardUser.module.sass'
+import StyleModo from './sass/Modo.module.sass'
 
 export const CardUser = ({username}) => {
 
 
-  const {avatar} = useFetchGitHub(username);
+  const {avatar} = useFetchGitHub(username); //Obtengo un objeto con los datos de la api
 
 
   return (
-    <div className="card">
+    <div className={`${StyleCardUser.card} ${StyleModo.prueba}`}>
+
         <Avatar 
           avatar_url={avatar.avatar_url}
         />
-        <InfoUser
-          name={avatar.name}
-          username={avatar.login}
-          bio={avatar.bio}
-          created_at={avatar.created_at}
-        />
-        <InfoRepos
-          repos={avatar.public_repos}
-          followers={avatar.followers}
-          following={avatar.following}
-        />
-        <InfoContact
-          location={avatar.location}
-          twitter={avatar.twitter_username}
-          url={avatar.html_url}
-          company={avatar.company}
-        />
+
+        <div className={StyleCardUser.card__indo}>
+
+          <InfoUser
+            user={username}
+            name={avatar.name}
+            username={avatar.login}
+            bio={avatar.bio}
+          />
+
+          <InfoRepos
+            repos={avatar.public_repos}
+            followers={avatar.followers}
+            following={avatar.following}
+          />
+
+          <InfoContact
+            location={avatar.location}
+            twitter={avatar.twitter_username}
+            url={avatar.html_url}
+            company={avatar.company}
+          />
+
+        </div>
     </div>
   )
 }
