@@ -6,4 +6,3 @@ export const Avatar = ({avatar_url}) => {
     <img className={StyleAvatar.avatar} src={avatar_url} alt="Avatar" />
   )
 }
- 

@@ -17,7 +17,7 @@ export const CardUser = ({username}) => {
           avatar_url={avatar.avatar_url}
         />
 
-        <div className={StyleCardUser.card__indo}>
+        <div className={StyleCardUser.card__info}>
 
           <InfoUser
             user={username}

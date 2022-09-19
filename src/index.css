@@ -1,0 +1,19 @@
+:root 
+  [data-theme="light"]{
+    --background: #F4F7FE;
+    --background__card: #FEFEFE;
+    --background__repo: #F5F8FF;
+    --font__primary: #000000;
+    --font__secondary: #5D6782;
+    --icon: #49679E;
+    --user: #79B4D9;
+  }
+  [data-theme="dark"]{
+    --background: #141C2f;
+    --background__card: #1F2A48;
+    --background__repo: #141C2F;
+    --font__primary: #FFFFFF;
+    --font__secondary: #5D6782;
+    --icon: #FFFFFF;
+    --user: #194684;
+  }

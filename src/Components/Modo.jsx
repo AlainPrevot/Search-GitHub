@@ -1,6 +1,7 @@
 import StyleModo from './sass/Modo.module.sass'
 
-export const Modo = () => {
+export const Modo = ({onMode}) => {
+  
   return (
     <div className={StyleModo.content}>
 
@@ -8,7 +9,7 @@ export const Modo = () => {
 
         <div className={StyleModo.modo}>
 
-            <input id="modo" type="checkbox" name='my-checkbox' />
+            <input id="modo" type="checkbox" name='my-checkbox' onClick={() => onMode()}/>
             <label className={StyleModo.dark} htmlFor="modo">DARK</label>
             <label className={StyleModo.ligth} htmlFor="modo">LIGTH</label>
         </div>
