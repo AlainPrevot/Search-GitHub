@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getUser } from "../../helpers/getUser";
+import { getUser } from "../helpers/getUser";
 
 export const useFetchGitHub = (username) => {
 

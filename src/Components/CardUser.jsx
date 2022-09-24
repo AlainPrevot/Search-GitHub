@@ -1,4 +1,4 @@
-import { useFetchGitHub } from "./hooks/useFetchGitHub"
+import { useFetchGitHub } from "../hooks/useFetchGitHub"
 import {Avatar, InfoContact, InfoRepos, InfoUser } from "../Components";
 
 import StyleCardUser from './sass/CardUser.module.sass'

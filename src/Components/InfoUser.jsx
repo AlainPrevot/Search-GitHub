@@ -1,4 +1,4 @@
-import { useDate } from './hooks/useDate'
+import { useDate } from '../hooks/useDate'
 import StyleInfoUser from './sass/InfoUser.module.sass'
 
 export const InfoUser = ({user, name, username, bio}) => {
