@@ -1,36 +1,111 @@
 @use './_Font'
 
-.form
-    background-color: var(--background__card)
-    border-radius: 8px
-    margin: 0 auto
-    padding: 10px 0px 10px 26px
-    min-width: 700px
+// .form
+//     background-color: var(--background__card)
+//     border-radius: 8px
+//     margin: 0 auto
+//     padding: 10px 0px 10px 26px
+//     min-width: 700px
+    // position: relative 
 
-    .form__lupa
+//     .form__lupa
+//         position: relative
+//         top: 8px
+//         margin-right: 10px
+//         fill: #255DA5
+//     .input, .button
+//         border: none
+//         color: var(--font__primary)
+
+//     .input
+//         background-color: transparent
+//         outline: none
+//         width: 80% 
+//         height: 38px
+
+//     .input::placeholder
+//         color: #A9B1C7
+
+//     .button
+//         background-color: #0583F2
+//         color: white
+//         border-radius: 6px
+//         font-size: 0.9rem
+//         padding: 10px 18px
+//         position: absolute
+//         top: -3px
+//         right: 10px
+
+@media only screen and (max-width: 720px)
+    .form
+        background-color: var(--background__card)
+        border-radius: 8px
+        margin: 0 auto
+        padding: 10px 0px 10px 26px
         position: relative
-        top: 8px
-        margin-right: 10px
-        fill: #255DA5
-    .input, .button
-        border: none
-        color: var(--font__primary)
+        // min-width: 700px
 
-    .input
-        background-color: transparent
-        outline: none
-        width: 80% 
-        height: 38px
+        .form__lupa
+            position: relative
+            top: 8px
+            margin-right: 10px
+            fill: #255DA5
+        .input, .button
+            border: none
+            color: var(--font__primary)
 
-    .input::placeholder
-        color: #A9B1C7
+        .input
+            background-color: transparent
+            outline: none
+            width: 70% 
+            height: 38px
 
-    .button
-        background-color: #0583F2
-        color: white
-        border-radius: 6px
-        font-size: 0.9rem
-        padding: 10px 18px
+        .input::placeholder
+            color: #A9B1C7
+
+        .button
+            background-color: #0583F2
+            color: white
+            border-radius: 6px
+            font-size: 0.9rem
+            padding: 10px 18px
+            position: absolute
+            right: 10px
+
+@media only screen and (max-width: 500px)
+    .form
+        background-color: var(--background__card)
+        border-radius: 8px
+        margin: 0 auto
+        padding: 10px 0px 10px 26px
         position: relative
-        top: -3px
-        right: 10px
+        // min-width: 700px
+
+        .form__lupa
+            position: relative
+            width: 24px
+            height: 24px
+            top: 6px
+            margin-right: 10px
+            fill: #255DA5
+        .input, .button
+            border: none
+            color: var(--font__primary)
+            font-size: 0.8rem
+
+        .input
+            background-color: transparent
+            outline: none
+            width: 50% 
+            height: 34px
+
+        .input::placeholder
+            color: #A9B1C7
+
+        .button
+            background-color: #0583F2
+            color: white
+            border-radius: 6px
+            padding: 10px 18px
+            position: absolute
+            right: 10px
