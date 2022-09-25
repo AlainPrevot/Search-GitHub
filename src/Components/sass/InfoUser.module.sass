@@ -1,40 +1,70 @@
 @use './_Font'    
     
-// .content
-//     padding: 20px 0
-//     position: relative
-
-//     h1
-//         color: var(--font__primary)
-//         font-size: 28px
-//         margin-bottom: 4px
-
-//     p, h2
-//         font:
-//             size: 14px
-//             weight: 400
     
-//     h2
-//         color: var(--user)
-//         margin-bottom: 26px
 
-//     h2::before
-//         content: '@'
-        
-//     p
-//         color: var(--font__secondary)
-
-//     p:last-child
-//         position: absolute
-//         right: 0px
-        top: 26px
-    
-@media only screen and (max-width: 720px)
+@media only screen and (max-width: 500px)
 
     .content
-        // width: 68%
-        margin-left: 32% 
+        margin-left: 36%
         padding: 20px 0 40px 0
+        position: relative
+        margin-bottom: 20px
+
+        h1
+            color: var(--font__primary)
+            font-size: 1.2rem
+            margin-bottom: 4px
+            height: 26px
+
+        p, h2
+            font:
+                size: 0.8rem
+                weight: 400
+        
+        h2
+            color: var(--user)
+            margin-bottom: 10px
+
+        h2::before
+            content: '@'
+            
+        p
+            color: var(--font__secondary)
+
+        p:last-child
+            position: absolute
+            top: 120px
+            left: -50%
+
+@media only screen and (min-width:500px) and (max-width: 720px)
+
+    .content
+        margin-left: 32% 
+        padding: 20px 0 20px 0
+
+        h1
+            color: var(--font__primary)
+            font-size: 24px
+            margin-bottom: 4px
+
+        p, h2
+            font:
+                size: 14px
+                weight: 400
+        
+        h2
+            color: var(--user)
+
+        h2::before
+            content: '@'
+            
+        p
+            color: var(--font__secondary)
+            margin: 8px 0 8px 0
+
+@media only screen and (min-width:720px)
+    .content
+        padding: 20px 0
         position: relative
 
         h1
@@ -56,43 +86,8 @@
             
         p
             color: var(--font__secondary)
-            margin-top: 40px
 
-        p:last-child
+        p:nth-child(3)
             position: absolute
-            // right: 0px
-            top: 40px
-
-@media only screen and (max-width: 500px)
-
-    .content
-        // width: 68%
-        margin-left: 32% 
-        padding: 20px 0 40px 0
-        position: relative
-
-        h1
-            color: var(--font__primary)
-            font-size: 1.4rem
-            margin-bottom: 4px
-
-        p, h2
-            font:
-                size: 0.8rem
-                weight: 400
-        
-        h2
-            color: var(--user)
-            margin-bottom: 26px
-
-        h2::before
-            content: '@'
-            
-        p
-            color: var(--font__secondary)
-            margin-top: 40px
-
-        p:last-child
-            position: absolute
-            // right: 0px
-            top: 40px
+            right: 0px
+            top: 26px

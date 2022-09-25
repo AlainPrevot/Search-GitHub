@@ -10,8 +10,8 @@ export const InfoUser = ({user, name, username, bio}) => {
     <div className={StyleInfoUser.content}>
         <h1>{name}</h1>
         <h2>{username}</h2>
-        <p>{biography}</p>
         <p>Joined {day} {month} {year}</p>  
+        <p>{biography}</p>
     </div>
   )
 }

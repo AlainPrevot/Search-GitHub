@@ -4,6 +4,8 @@
     display: flex
     align-items: center
     justify-content: space-between
+    width: 90%
+    margin: 0 auto
 
     h1, label
         color: var(--font__primary)
@@ -51,3 +53,12 @@
 
         input
             visibility: hidden
+
+@media only screen and (min-width:500px) and (max-width: 720px)
+    .content
+        width: 80%
+        min-width: 560px
+
+@media only screen and (min-width:720px)
+    .content
+        width: 100%

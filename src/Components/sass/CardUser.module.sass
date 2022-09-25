@@ -1,30 +1,46 @@
-// .card
-//     background-color: var(--background__card)
-//     border-radius: 8px
-//     margin-top: 30px
-//     padding: 20px 26px
-//     display: flex
-//     justify-content: space-between
-//     padding: 20px 40px
-//     max-width: 720px
-    
-//     .card__info
-//         width: 76%
-//         display: flex
-//         flex-direction: column
-//         margin-left: 20px
 
-@media only screen and (max-width: 720px)
-    .card
-        background-color: var(--background__card)
-        border-radius: 8px
-        margin-top: 30px
-        padding: 20px 40px
 
 @media only screen and (max-width: 500px)
     .card
         background-color: var(--background__card)
         border-radius: 8px
-        margin-top: 30px
+        margin: 20px auto 0 auto
         padding: 20px 20px
+        box-sizing: border-box
+        width: 90%
         
+        .card__info
+            display: flex
+            flex-direction: column
+        
+@media only screen and (min-width:500px) and (max-width: 720px)
+    .card
+        background-color: var(--background__card)
+        border-radius: 8px
+        padding: 20px 40px
+        box-sizing: border-box
+        width: 80%
+        margin: 30px auto 0 auto
+        min-width: 560px
+        
+        .card__info
+            display: flex
+            flex-direction: column
+
+
+@media only screen and (min-width:720px)
+    .card
+        background-color: var(--background__card)
+        border-radius: 8px
+        margin-top: 30px
+        padding: 20px 26px
+        display: flex
+        justify-content: space-between
+        padding: 20px 40px
+        max-width: 720px
+        
+        .card__info
+            width: 76%
+            display: flex
+            flex-direction: column
+            margin-left: 20px

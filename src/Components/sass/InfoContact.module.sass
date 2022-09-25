@@ -1,39 +1,6 @@
 @use './_Font'
 
-// .content
-//     width: 100%
-//     display: grid
-//     grid-template-columns: 0.1fr 1.5fr 0.1fr 1fr
-//     grid-template-rows: 1fr 1fr
-//     gap: 18px
-//     margin: 40px 0
 
-//     span, a
-//         font-size: 14px
-//         color: var(--font__secondary)
-
-//     .content__Icon
-//         fill: var(--icon)
-//         position: relative
-//         top: -4px
-
-// @media only screen and (max-width: 720px)
-//     .content
-//         width: 100%
-//         display: grid
-//         grid-template-columns: 0.1fr 1.5fr 0.1fr 1fr
-//         grid-template-rows: 1fr 1fr
-//         gap: 18px
-//         margin: 40px 0px 
-
-//         span, a
-//             font-size: 14px
-//             color: var(--font__secondary)
-
-//         .content__Icon
-//             fill: var(--icon)
-//             position: relative
-//             top: -4px
 
 @media only screen and (max-width: 500px)
     .content
@@ -53,3 +20,40 @@
             fill: var(--icon)
             position: relative
             top: 6px
+
+@media only screen and (min-width:500px) and (max-width: 720px)
+    .content
+        width: 100%
+        display: grid
+        grid-template-columns: 0.1fr 1fr 0.1fr 1fr
+        grid-template-rows: 1fr 1fr
+        gap: 16px
+        margin: 40px 0px 
+
+
+        span, a
+            font-size: 14px
+            color: var(--font__secondary)
+
+        .content__Icon
+            fill: var(--icon)
+            position: relative
+            top: -4px
+            
+@media only screen and (min-width:720px)
+    .content
+        width: 100%
+        display: grid
+        grid-template-columns: 0.1fr 1.5fr 0.1fr 1fr
+        grid-template-rows: 1fr 1fr
+        gap: 18px
+        margin: 40px 0
+
+        span, a
+            font-size: 14px
+            color: var(--font__secondary)
+
+        .content__Icon
+            fill: var(--icon)
+            position: relative
+            top: -4px
