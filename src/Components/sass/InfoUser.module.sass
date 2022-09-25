@@ -1,6 +1,22 @@
 @use './_Font'    
+
+.content
+    h1
+        color: var(--font__primary)
+        margin-bottom: 4px
+
+    p, h2
+        font:
+            size: 0.8rem
+            weight: 400
     
-    
+    h2
+        color: var(--user)
+    h2::before
+        content: '@'
+
+    p
+        color: var(--font__secondary)
 
 @media only screen and (max-width: 500px)
 
@@ -11,25 +27,11 @@
         margin-bottom: 20px
 
         h1
-            color: var(--font__primary)
             font-size: 1.2rem
-            margin-bottom: 4px
             height: 26px
 
-        p, h2
-            font:
-                size: 0.8rem
-                weight: 400
-        
         h2
-            color: var(--user)
             margin-bottom: 10px
-
-        h2::before
-            content: '@'
-            
-        p
-            color: var(--font__secondary)
 
         p:last-child
             position: absolute
@@ -43,23 +45,9 @@
         padding: 20px 0 20px 0
 
         h1
-            color: var(--font__primary)
-            font-size: 24px
-            margin-bottom: 4px
+            font-size: 1.2rem
 
-        p, h2
-            font:
-                size: 14px
-                weight: 400
-        
-        h2
-            color: var(--user)
-
-        h2::before
-            content: '@'
-            
         p
-            color: var(--font__secondary)
             margin: 8px 0 8px 0
 
 @media only screen and (min-width:720px)
@@ -68,24 +56,11 @@
         position: relative
 
         h1
-            color: var(--font__primary)
-            font-size: 28px
-            margin-bottom: 4px
+            font-size: 1.6rem
 
-        p, h2
-            font:
-                size: 14px
-                weight: 400
         
         h2
-            color: var(--user)
             margin-bottom: 26px
-
-        h2::before
-            content: '@'
-            
-        p
-            color: var(--font__secondary)
 
         p:nth-child(3)
             position: absolute
