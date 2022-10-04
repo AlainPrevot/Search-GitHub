@@ -6,17 +6,17 @@ export const SearchUser = ({onNewUser}) => {
 
     const [inputValue, setInputValue] = useState(''); //Creo un hook
 
-    const onInputChange = e => { {/* Esta funcion envia los datos al input cada vez que escribo */}
+    const onInputChange =  e => { {/* Esta funcion envia los datos al input cada vez que escribo */}
         setInputValue(e.target.value); //Imprimo lo qu escribo en el input
     };
 
     const onSubmit = e => { //Esta funcion se ejecuta cada vez que presionamos enter
         e.preventDefault(); //Hacemos que no se recargue la pagina
-        if(inputValue.trim().length <= 1) return //Controlamos que el input no este vacio
+        if(inputValue.trim().length <= 1) return //Controlamos que el input no este vacio y eliminamos los espacios al principio y al final 
 
         onNewUser(inputValue.trim()); //Enviamos el resultado fuera del componente
         setInputValue(''); //Limpiamos el componente
-    }
+    };
 
 
   return (
