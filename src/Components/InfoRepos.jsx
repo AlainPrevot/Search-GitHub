@@ -1,6 +1,6 @@
 import StyleInfoRepos from './sass/InfoRepos.module.sass'
 
-export const InfoRepos = ({repos, followers, following}) => {
+export const InfoRepos = ({repos=0, followers=0, following=0}) => {
 
   return (
     <div className={StyleInfoRepos.content}>
@@ -21,4 +21,5 @@ export const InfoRepos = ({repos, followers, following}) => {
       </div>
     </div>
   )
-}
+};
+

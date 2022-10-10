@@ -2,7 +2,6 @@ import { useFetchGitHub } from "../hooks/useFetchGitHub"
 import {Avatar, InfoContact, InfoRepos, InfoUser } from "../Components";
 
 import StyleCardUser from './sass/CardUser.module.sass'
-import StyleModo from './sass/Modo.module.sass'
 
 export const CardUser = ({username}) => {
 
@@ -11,7 +10,7 @@ export const CardUser = ({username}) => {
 
 
   return (
-    <div className={`${StyleCardUser.card} ${StyleModo.prueba}`}>
+    <div className={StyleCardUser.card}>
 
         <Avatar 
           avatar_url={avatar.avatar_url}

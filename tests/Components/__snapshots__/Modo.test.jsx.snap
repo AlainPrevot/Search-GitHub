@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en Modo Debe de hacer match con el snapshot 1`] = `
+<div>
+  <div>
+    <h1>
+      devfinder
+    </h1>
+    <div>
+      <input
+        id="modo"
+        name="my-checkbox"
+        type="checkbox"
+      />
+      <label
+        for="modo"
+      >
+        DARK
+      </label>
+      <label
+        for="modo"
+      >
+        LIGTH
+      </label>
+    </div>
+  </div>
+</div>
+`;

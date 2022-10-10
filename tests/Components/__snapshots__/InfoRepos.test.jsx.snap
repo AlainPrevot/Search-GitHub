@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en InfoRepos Debe de hacer match con el snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      <span>
+        Repos
+      </span>
+      <span>
+        8
+      </span>
+    </div>
+    <div>
+      <span>
+        Folowers
+      </span>
+      <span>
+        22
+      </span>
+    </div>
+    <div>
+      <span>
+        Following
+      </span>
+      <span>
+        10
+      </span>
+    </div>
+  </div>
+</div>
+`;

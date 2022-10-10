@@ -1,5 +1,6 @@
 import {IconCompany, IconLocation, IconTwitter, IconURL} from '../Icons'
 import StyleInfoContact from './sass/InfoContact.module.sass'
+import PropTypes from 'prop-types'
 
 export const InfoContact = ({location, twitter, url, company}) => {
 
@@ -24,4 +25,11 @@ export const InfoContact = ({location, twitter, url, company}) => {
         <span>{user_company}</span>
     </div>
   )
+}
+
+InfoContact.propTypes = {
+  location: PropTypes.string.isRequired,
+  twitter: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
 }

@@ -1,5 +1,6 @@
 import { useDate } from '../hooks/useDate'
 import StyleInfoUser from './sass/InfoUser.module.sass'
+import PropTypes from 'prop-types'
 
 export const InfoUser = ({user, name, username, bio}) => {
 
@@ -15,4 +16,9 @@ export const InfoUser = ({user, name, username, bio}) => {
         <p>{biography}</p>
     </div>
   )
+};
+
+InfoUser.propTypes = {
+  user: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired
 }

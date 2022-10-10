@@ -1,4 +1,5 @@
 import StyleModo from './sass/Modo.module.sass'
+import PropTypes from 'prop-types'
 
 export const Modo = ({onMode}) => {
   
@@ -15,4 +16,8 @@ export const Modo = ({onMode}) => {
         </div>
     </div>
   )
-}
+};
+
+Modo.propTypes = {
+  onMode: PropTypes.func.isRequired,
+};
